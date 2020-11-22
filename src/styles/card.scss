@@ -1,17 +1,33 @@
 $main-color: #00acdc;
 $white-color: rgb(255, 255, 255);
+$card-border: #f3f3f3;
 
 .card {
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-border;
   border-radius: 5px;
   height: 403px;
   width: 200px;
   padding: 15px 15px 15px 14px;
 
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 164px;
+    transition: transform 1s;
+    border: 3px solid $white-color;
+    margin-bottom: 30px;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 3px solid $card-border;
+    }
+  }
+
   &__image {
     width: 160px;
     height: 134px;
-    margin: 15px 0 41px 5px;
   }
 
   &__description {
@@ -79,6 +95,7 @@ $white-color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 14px;
     cursor: pointer;
+    transition: background-color 1s, color 1s;
   }
 
   &__button:hover {

@@ -17,12 +17,18 @@ $main-color: #00acdc;
     font-size: 12px;
     line-height: 60px;
     color: rgb(0, 0, 0);
+    transition: color 1s;
+  }
+
+  &__link:hover {
+    color: $main-color;
   }
 
   &__item {
     display: inline-flex;
     text-transform: uppercase;
     margin: 0 0.5em;
+
   }
 
   &__list:first-child,
@@ -34,10 +40,6 @@ $main-color: #00acdc;
   &__list:first-child,
   &__item:first-child {
     margin-left: 0;
-  }
-
-  &__link:hover {
-    color: $main-color;
   }
 }
 
