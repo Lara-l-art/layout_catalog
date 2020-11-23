@@ -15,13 +15,14 @@ $card-border: #f3f3f3;
     justify-content: center;
     width: 170px;
     height: 164px;
-    transition: transform 1s;
+    transition: transform 0.5s;
     border: 3px solid transparent;
     margin-bottom: 30px;
 
     &:hover {
       transform: scale(1.2);
       border-color: $card-border;
+      cursor: pointer;
     }
   }
 
@@ -66,7 +67,7 @@ $card-border: #f3f3f3;
 
   }
 
-  
+
 
   &__button {
     display: block;
@@ -83,7 +84,7 @@ $card-border: #f3f3f3;
     font-weight: 700;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
   }
 
   &__button:hover {
