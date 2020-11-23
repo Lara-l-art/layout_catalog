@@ -10,7 +10,7 @@ $card-border: #f3f3f3;
   padding: 15px 15px 15px 14px;
 
   &__picture {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
     width: 170px;
@@ -60,25 +60,13 @@ $card-border: #f3f3f3;
   }
 
   &__price {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 90px);
     margin: 25px 0 20px;
-    justify-content: space-between;
+
   }
 
-  &__word {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 14px;
-  }
-
-  &__number {
-    position: relative;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    margin-top: -4px;
-    left: 1px;
-  }
+  
 
   &__button {
     display: block;
