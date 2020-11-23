@@ -1,8 +1,8 @@
 $main-color: #00acdc;
 
 .header {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  justify-content: end;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
   &__nav {
@@ -17,10 +17,15 @@ $main-color: #00acdc;
     font-size: 12px;
     line-height: 60px;
     color: rgb(0, 0, 0);
+    transition: color 0.5s;
+  }
+
+  &__link:hover {
+    color: $main-color;
   }
 
   &__item {
-    display: inline-flex;
+    display: inline-grid;
     text-transform: uppercase;
     margin: 0 0.5em;
   }
@@ -34,10 +39,6 @@ $main-color: #00acdc;
   &__list:first-child,
   &__item:first-child {
     margin-left: 0;
-  }
-
-  &__link:hover {
-    color: $main-color;
   }
 }
 
